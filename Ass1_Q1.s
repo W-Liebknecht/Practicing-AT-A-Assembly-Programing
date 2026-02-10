@@ -1,5 +1,6 @@
  .section .data
- msg_invalid:
+
+ msg_prime msg_invalid:
     .ascii "Invalid input.\n"
  msg_invalid_len:
     .long . - msg_invalid
@@ -7,6 +8,7 @@
  .section .bss
  .equ   BUFFER_SIZE, 64
  .lcomm BUFFER_DATA, BUFFER_SIZE
+
  .section .text
  .global _start
 
